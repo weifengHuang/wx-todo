@@ -1,0 +1,57 @@
+/**index.wxss**/
+.container {
+    border-top:1rpx solid #e5e5e5;
+    justify-content:center;
+    align-items:center;
+    padding: 20rpx;
+}
+.header{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 20rpx;
+    border: 1rpx solid #e0e0e0;
+    box-shadow: 0 0 10rpx #e0e0e0;
+    border-radius: 10rpx;
+}
+.header .plus {
+    width: 41rpx;
+    height: 41rpx;
+    margin-right: 20rpx;
+}
+.header .input {
+    flex: 1;
+    font-size: 41rpx;
+}
+.empty {
+    display:flex;
+}
+.content{
+    padding:200rpx 0;
+}
+.todo{
+    width:100%;
+    margin:20rpx;
+}
+.taskList{
+    width:90%;
+    display:flex;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 10rpx;
+    padding:20rpx;
+}
+.taskList .task {
+    flex:1
+}
+.completed .task {
+    text-decoration: line-through
+}
+.footer {
+    margin-top:30rpx 0rpx 0rpx 0rpx;
+    display:flex;
+}
+button{
+    padding:0 15rpx;
+    margin:0 25rpx;
+    font-size:35rpx;
+}

@@ -1,0 +1,16 @@
+.logContainer{
+    padding:0rpx;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 25rpx;
+  border:1rpx solid #e0e0e0;
+}
+.log-item {
+  margin: 10rpx;
+}
+.action , .content {
+    padding-left: 55rpx
+}

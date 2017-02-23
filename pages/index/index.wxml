@@ -1,0 +1,35 @@
+<view class='container'>
+    <view class='header'>
+        <image bindtap='addTodo' class='plus' src='/images/plus.png'> </image>
+        <input
+            focus
+            class = 'input'
+            value = "{{input}}"
+            placeholder = "请输入内容"
+            bindinput = "inputHandle"
+            bindconfirm = 'addTodo'
+        />
+    </view>
+
+    <block class='block' wx:if="{{todos.length > 0}}">
+        <view class='todo'>
+            <view class='taskList {{item.status? "completed":""}}' bindtap='toggleTodo'
+            wx:for='{{todos}}' wx:key='{{index}}' data-index="{{index}}"
+            >
+                <icon class='complete' type="{{item.status?'success':'circle'}}"> </icon>
+                <text class='task'>{{item.content}}</text>
+                <icon catchtap='removeSingle' class='delete' type="clear" data-index="{{index}}"> </icon>
+            </view>
+        </view>
+        <view class='footer'>
+            <button bindtap='alldone' >全部完成</button>
+            <button bindtap='deleteDone'>清除已完成</button>
+            <button bindtap='deleteAll'>清除全部</button>
+        </view>
+    </block>
+    <block wx:else>
+        <view class='empty' >
+            <text class='content'>目前没有任务安排</text>
+        </view>
+    </block>
+</view>

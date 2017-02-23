@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container logContainer ">
+  <block wx:for="{{logs}}" wx:for-item="item" wx:key="*this">
+    <view class='log-list'>
+        <text>{{index + 1}}、操作时间：{{item.time}}</text>
+        <text class='content'>操作内容：{{item.content}}</text>
+        <text class='action'>操作动作：{{item.action}}</text>
+    </view>
+  </block>
+</view>

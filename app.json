@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "任务清单",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "selectedColor": "#222",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务列表",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-actived.png"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"历史记录",
+        "iconPath":"images/note.png",
+        "selectedColor":"images/note-actived.png"
+      }
+    ]
+  }
+}
